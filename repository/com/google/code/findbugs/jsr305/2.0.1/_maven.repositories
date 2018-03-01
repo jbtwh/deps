@@ -1,0 +1,6 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue Nov 29 18:44:34 EET 2016
+jsr305-2.0.1.jar>central=
+jsr305-2.0.1.jar>spring-releases=
+jsr305-2.0.1.pom>central=
+jsr305-2.0.1.pom>spring-releases=

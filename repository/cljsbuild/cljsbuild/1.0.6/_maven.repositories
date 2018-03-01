@@ -1,0 +1,4 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue Feb 27 20:57:26 EET 2018
+cljsbuild-1.0.6.jar>clojars=
+cljsbuild-1.0.6.pom>clojars=

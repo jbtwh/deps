@@ -1,0 +1,7 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Wed May 10 04:40:17 EEST 2017
+lwjgl-jemalloc-3.1.0.jar>central=
+lwjgl-jemalloc-3.1.0-natives-macos.jar>central=
+lwjgl-jemalloc-3.1.0-natives-windows.jar>central=
+lwjgl-jemalloc-3.1.0.pom>central=
+lwjgl-jemalloc-3.1.0-natives-linux.jar>central=

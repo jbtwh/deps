@@ -1,0 +1,4 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Tue Nov 29 18:44:32 EET 2016
+backport-util-concurrent-3.1.pom>spring-releases=
+backport-util-concurrent-3.1.pom>central=
