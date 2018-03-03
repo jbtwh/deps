@@ -92,6 +92,14 @@ void main(void)
 (def clearAlpha 1.0)
 (def clock THREE.Clock.)
 
+(def tuniform1
+ (js-obj "iGlobalTime" 666))
+
+(println tuniform1)
+
+
+(println (.-iGlobalTime tuniform1))
+
 (def tuniform {
 :iGlobalTime {:type "f" :value 0.1}
 :iChannel0 {:type "t" :value (THREE.ImageUtils.loadTexture. "images/tex07.jpg" )}
@@ -107,17 +115,16 @@ void main(void)
 (def renderer (THREE.WebGLRenderer. {:antialias true}))
 
 (.setSize renderer width height)
-(.setClearColor (THREE.Color. clearColor clearAlpha))
+(.setClearColor renderer (THREE.Color. clearColor clearAlpha))
 (def mat (THREE.ShaderMaterial. {
 :uniforms tuniform
 :vertexShader vertshader
 :fragShader fragshader
-:side (.-DoubleSide Three.)}))
+:side (.-DoubleSide THREE)}))
 
-(set! (.-value (.- iGlobalTime tuniform)) (+ (.-value (.- iGlobalTime tuniform)) .getDelta clock))
+(set! (.-value (.-iGlobalTime tuniform)) (+ (.-value (.-iGlobalTime tuniform)) (.getDelta clock)))
 
 ;;(def mat (THREE.Mesh. (THREE.CubeGeometry. 700 394 1 1) mat))
-
 
 
 index.html
